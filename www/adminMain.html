@@ -1,0 +1,72 @@
+
+ 
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ 
+ 
+<link rel="stylesheet" href="css/override.css" />
+ <link rel="stylesheet" href="css/waleed.min.css" />
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
+  
+ <script src="js/jquery.js"></script>
+ 
+ <script src="js/jquery.mobile-1.2.0.min.js"></script>
+ 
+
+<link rel="stylesheet" href="css/override.css" />
+ 
+ 
+  <script src="js/cordova-2.1.0.js"></script>
+<script src="js/adminMain.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="AdminPage">
+    <div  data-role="header" data-theme="g">       
+     
+          
+             
+        <h1>Admin Main Page</h1>      
+        
+       <div data-role="navbar"   >
+			<ul>
+				<li><a href="index.html" data-transition="none" data-icon="home">Home</a></li>
+				<li><a data-rel="back"  data-transition="none" data-icon="arrow-l">Back</a></li>
+				 
+			</ul>
+		</div>  
+    </div><!-- /header -->
+    <div data-role="content" data-theme="c"> 
+    
+    <select style="width=100%;" name="select-choice-11" id="select" data-theme="i" data-icon="gear"  data-native-menu="false" >
+			 <option selected="true" value="standard"> Manage Catagories  </option>
+             <option value="rush">   Manage Places </option>
+		</select>  
+		 
+		 
+		 
+		<br/>
+	<br/>
+		<br/>
+    <div class="myList" >
+     
+        <ul id="mainList" data-role="listview" data-theme="g" data-inset="true" data-divider-theme="g" >
+              <li data-role="list-divider">Manage Catagories </li>
+             <li data-icon="plus" data-iconpos="left"><a   href="AddCat.html">Add Catagory </a></li>
+             <li data-icon="edit"><a   href="editCat.html">Edit Catagory</a></li>    
+              <li data-icon="delete"><a  href="removeCat.html">Remove Catagory</a></li>
+                  
+        </ul>
+    </div>
+    </div><!-- /content -->
+    <div data-id="myfooter"  data-position="fixed" data-role="footer" data-theme="g">
+       <h4>&copy;UTM 2012</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+ 
+</body>
+</html>
